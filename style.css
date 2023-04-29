@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .body {
+    font-family: "Montserrat", sans-serif;
+    background: #000915;
+  }
+  
+  .center {
+    padding-left: calc(50% - 618px);
+    padding-right: calc(50% - 618px);
+  }
+
+  .hat-wrapper {
+    background: url(img/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1024px;
+    padding-top: 150px;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-top: 67px;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    height: 64px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    width: 481px;
+  }
+
+  .check {
+    margin-top: 44px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box;
+    width: 234px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    height: 46px;
+    transition: all 0, 3s;
+  }
+
+  .check:hover {
+    color: #ffffff;
+    background-color: #cac3c3;
+  }
+
+  .footer {
+    background: url(img/Rectangle\ 5.jpg);
+    width: 1440px;
+    height: 556px;
+    padding-top: 128px;
+  }
+
+  .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  .game_link {
+    width: 379px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .game_link-1 {
+    background-image: url(img/Rectangle\ 6.jpg);
+  }
+
+  .game_link-2 {
+    background-image: url(img/Rectangle\ 7.jpg);
+  }
+
+  .game_link-3 {
+    background-image: url(img/Rectangle\ 8.jpg);
+  }
