@@ -1,47 +1,63 @@
 //задание 1 
 
-let i=0;
-
-while (i<3) {
-    console.log ('Привет!');
-    i++;
-}
+console.log('диана'.toUpperCase());
 
 //задание 2
 
-let a = 1;
-while (a<=6); { 
-    console.log('a');
-    a++;
-} 
+const products = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+
+const search = ('ко');
+
+products.forEach((product) => {
+	if (product.toLowerCase().startsWith(search.toLowerCase())) {
+		console.log(product);
+	}
+});
 
 //задание 3
+console.log(Math.floor(32.58884));
+console.log(Math.ceil(32.58884));
+console.log(Math.round(32.58884));
 
-let b = 7;
-while (b<=22); { 
-    console.log(b);
-    b++;
-} 
 
 //задание 4
-
-let obj = {'Kolya': 200, 'Vasya':300, 'Petya': 400};
-
-for (key in obj){
-    console.log ([key]+ ' - Зарплата'+ obj[key]+'долларов'+'<br>');
-}
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
 
 //задание 5
 
-let num = 0; 
-for (let n = 1000; n >= 25; n = n / 2)  {
-    console.log(n); 
-    num++;
-}
+function getRandomInt(minValue, maxValue) {
+    return Math.round (Math.random() * maxValue);
+ }
+ console.log(getRandomInt(0, 10));
 
-//задание 6
+ //задание 6
 
-let friday = 6; 
-for (let friday = 6; friday <=31; friday = friday +=7) {
-    console.log(`Сегодня пятница, ${friday} - е число. Необходимо подготовить отчет`);
-}
+ //задание 7
+
+ //задание 8
+ let now = new Date();
+ console.log (now);
+
+ //задание 9
+ let currentDate = new Date(2023, 4, 30);
+currentDate.setDate(currentDate.getDate() + 73);
+
+alert(currentDate);
+
+
+//задание 10
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate = new Date();
+myDate.setDate(1);
+myDate.setMonth(5);
+myDate.setYear(2023);
+
+let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
+" " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+
+console.log(fullDate); 
+
