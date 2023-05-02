@@ -33,7 +33,24 @@ function getRandomInt(minValue, maxValue) {
 
  //задание 6
 
+ let massiv = getRandomArrNumber(7);
+ function getRandomArrNumber(num) {
+     let userArray = [];
+     for (let i = 0; i < num / 2; i++) {
+         userArray.push(Math.floor(Math.random() * Math.floor(num)));
+     }
+     return userArray;
+    }
+
+    console.log(massiv);
+
  //задание 7
+
+ function celoe (minValue,maxValue) {
+    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+}
+
+console.log(celoe(0, 50));
 
  //задание 8
  let now = new Date();
