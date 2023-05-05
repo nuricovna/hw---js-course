@@ -77,4 +77,3 @@ let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
 " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
 
 console.log(fullDate); 
-
