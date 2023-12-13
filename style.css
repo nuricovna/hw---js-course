@@ -6,7 +6,6 @@
   
   .body {
     font-family: "Montserrat", sans-serif;
-    background: #000915;
   }
   
   .center {
@@ -14,28 +13,28 @@
     padding-right: calc(50% - 618px);
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .hat-wrapper {
-    background: url(img/Rectangle\ 1.jpg);
+    background: url(img/fon_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 1024px;
-    padding-top: 150px;
   }
 
   .title {
-    font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 78px;
     color: #FFFFFF;
-    margin-top: 67px;
-    margin-bottom: 32px;
+    padding-top: 217px;
   }
 
   .text {
     height: 64px;
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
@@ -50,13 +49,14 @@
     border: none;
     box-sizing: border-box;
     width: 234px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #ffffff;
     height: 46px;
     transition: all 0, 3s;
+  }
+
+  .check_text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
   }
 
   .check:hover {
@@ -64,18 +64,17 @@
     background-color: #cac3c3;
   }
 
-  .footer {
-    background: url(img/Rectangle\ 5.jpg);
-    width: 1440px;
+  .game_main {
+    background-color: #000915;
     height: 556px;
-    padding-top: 128px;
   }
+
 
   .game-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 32px;
-    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 128px;
   }
 
   .game_link {
@@ -84,26 +83,22 @@
     display: flex;
     align-items: flex-end;
     padding: 32px;
-    text-decoration: none;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     color: #ffffff;
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
   }
 
   .game_link-1 {
-    background-image: url(img/Rectangle\ 6.jpg);
+    background-image: url(img/game_1.png);
   }
 
   .game_link-2 {
-    background-image: url(img/Rectangle\ 7.jpg);
+    background-image: url(img/game_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .game_link-3 {
-    background-image: url(img/Rectangle\ 8.jpg);
+    background-image: url(img/game_3.png);
   }
