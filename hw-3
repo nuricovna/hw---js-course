@@ -1,7 +1,7 @@
 // задание 1
 let password = (1234);
 const checking = prompt("Введите пороль");
-if (password == checking) {
+if (password === checking) {
     alert("Пароль введен верно");
 }
 else {
