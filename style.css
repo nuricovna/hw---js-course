@@ -168,6 +168,20 @@
     text-align: center;
 }
 
+.ftr_icon_top {
+  flex-basis: 10%;
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+}
+
+.arrow_up {
+  box-shadow: #337AB7;
+  border: 3px solid;
+  border-radius: 50%;
+  text-decoration: none;
+  border-color: lightslategrey;
+}
   
 
 
