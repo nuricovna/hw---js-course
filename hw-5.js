@@ -1,14 +1,9 @@
 // задание 1 
-let a = prompt('Число 1');
-let b = prompt('Число 2');
-function refundNumber() {
-    if (a < b) {
-        console.log(a);
-    } else if (a > b) {
-        console.log(b);
-    }
+function result(a, b) {
+    return Math.min(a, b)
 }
-refundNumber();
+
+console.log(result(8, 4));
 
 // задание 2 
 let num = prompt('Введите число');
@@ -49,12 +44,12 @@ alert(fixAge(howAge));
 
 // задание 5
 function trueIntNumber() {
-        let firstIntNumber = prompt('Введите первое число');
-        let lastIntNumber = prompt('Введите второе число');
-        if (!firstIntNumber, !lastIntNumber) {
-            return ('Одно или оба значения не являются числом');
-        } else {
-            return (firstIntNumber * lastIntNumber);
+        let a = prompt('Введите первое число');
+        let b = prompt('Введите второе число');
+        if (isNaN(a) || isNaN(b)) {
+            return 'Одно или оба значения не являются числом';
+          } else {
+            return (a * b);
         }
 }
 trueIntNumber();
