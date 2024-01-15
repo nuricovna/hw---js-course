@@ -43,16 +43,7 @@ function fixAge(howAge) {
 alert(fixAge(howAge));
 
 // задание 5
-function trueIntNumber() {
-        let a = prompt('Введите первое число');
-        let b = prompt('Введите второе число');
-        if (isNaN(a) || isNaN(b)) {
-            return 'Одно или оба значения не являются числом';
-          } else {
-            return (a * b);
-        }
-}
-trueIntNumber();
+ 
 
 // задание 6
 function backNumber() {
