@@ -15,15 +15,14 @@ const arrNumber3 = [1, 3, 5, 10, 20];
 console.log(arrNumber3.join(''));
 
 // задание 4 
-let arr = [];
+let arr = []
+
 for (let i = 0; i < 3; i++) {
-    let inArr = [];
-    for (let j = 0; j < 3; j++) {
-        inaArr.push(1);
-    }
-    arr.push(inaArr);
-}
-console.log(arr);
+arr[i] = [];
+for (let j = 0; j < 3; j++) {
+    arr[i][j] = 1;
+};
+};
 
 // задание 5 
 const arrNumber4 = [1, 1, 1];
@@ -36,18 +35,18 @@ let resultArr = [9, 8, 7, 'a', 6, 5].filter(item => !isNaN(item)).sort();
 console.log(resultArr);
 
 // задание 7
-const arrNumber6 = [9, 8, 7, 6, 5];
+const arrNumber = [9, 8, 7, 6, 5];
 let requestNumber = Number(prompt('Введи число'));
-if (arrNumber6.includes(requestNumber)) {
-    alert('Угадал');
+if (arrNumber.includes(requestNumber)) {
+    console.log(`Число ${requestNumber} есть в массиве.`);
 } else {
-    alert('Не угадал');
+    console.log(`Числа ${requestNumber} нет в массиве.`);
 }
 
 // задание 8
 let str = 'abcdef';
-let arrStr = str.split('').reverse().join('');
 console.log(`'${arrStr}'`);
+
 
 // задание 9
 const arr = [[1, 2, 3,], [4, 5, 6]];
@@ -61,12 +60,28 @@ for (let i = 0; i < arrCreate.length - 1; i++) {
 }
 
 // задание 11
-function inArr((arrNumber10) => arrNumber10.map(i => i ** 2));
-console.log(inArr);
+const numbers = [1, 4, 9];
+const roots = numbers.map(Math.sqrt);
 
 // задание 12
-const inArr2 = (String) => String.map(d => d.length);
+const getLenghtWords = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+const newArray = [];
+    for (let i = 0; i < getLenghtWords.length; i++) {
+        newArray.push(getLenghtWords[i].length);
+        console.log(newArray);
+}  
+
 
 // задание 13
-const inArr3 = (arrNumber11) => arrNumber11.filter(i => i < 0);
+function filterPositive(array) {
+    const negative = []; 
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) { 
+            negative.push(array[i]) 
+        }
+    }
+    return negative
+}
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10] 
+filterPositive([-25, 25, 0, -1000, -2]);
 
