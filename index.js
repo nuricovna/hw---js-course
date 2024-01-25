@@ -18,7 +18,7 @@ function monthNumber() {
 }
 
 
-function randFruit() {
+function fruitsRandom() {
     let arrFruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     arrFruit = arrFruit.sort(() => Math.random() - 0.5);
     alert(arrFruit);
