@@ -49,13 +49,7 @@ console.log(filter(human, isMale));
 
 // ЗАДАНИЕ 3
 const timer = (deadline) => {
-	let time = deadline;
-	console.log(time);
-	const interval = setInterval(() => {
-		time -= 1;
-		console.log(time);
-	}, 1000);
-    
+	
     setInterval(() => console.log(new Date()), 3000);
     setTimeout(() => { clearInterval(interval); console.log('30 секунд прошло'); }, 30000);
 };
