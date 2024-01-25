@@ -1,3 +1,5 @@
+// game 1
+
 function monthNumber() {
     let enterMonth = Number(prompt('Enter month number'));
     if (enterMonth === 12 || enterMonth === 1 || enterMonth === 2) {
@@ -17,6 +19,9 @@ function monthNumber() {
     }
 }
 
+
+
+// game 2
 
 function fruitsRandom() {
     let arrFruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
