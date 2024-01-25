@@ -45,7 +45,8 @@ if (arrNumber.includes(requestNumber)) {
 
 // задание 8
 let str = 'abcdef';
-console.log(`'${arrStr}'`);
+let arrStr = str.split('').reverse().join('');
+console.log(arrStr);
 
 
 // задание 9
@@ -60,8 +61,13 @@ for (let i = 0; i < arrCreate.length - 1; i++) {
 }
 
 // задание 11
-const numbers = [1, 4, 9];
-const roots = numbers.map(Math.sqrt);
+
+const products = [1, 2, 3, 4, 5, 6, 7, 8]
+function transformToSquare(num) {
+  return num * num
+}
+products.map(transformToSquare);
+
 
 // задание 12
 const getLenghtWords = ['слово', '', 'слог', 'длинное предложение', 'буква'];
@@ -73,15 +79,11 @@ const newArray = [];
 
 
 // задание 13
-function filterPositive(array) {
-    const negative = []; 
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] < 0) { 
-            negative.push(array[i]) 
-        }
-    }
-    return negative
-}
-console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10] 
-filterPositive([-25, 25, 0, -1000, -2]);
+const set = [5, -3, 50, -6];
 
+function negativeNumbers(set) {
+  return set.filter(function(value) {
+    return value < 0;
+  });
+}
+console.log(negativeNumbers(set));
