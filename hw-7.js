@@ -3,63 +3,31 @@ let word = 'js';
 word = word.toUpperCase();
 console.log(word); 
 
-// задание 2.1
-const animals = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const searchStart1 = 'ко';
-animals.forEach((animal) => {
-    if (animal.toLowerCase().includes(searchStart1.toLowerCase())) {
-		console.log(animal);
-	}
-});
+// задание 2
+function searchStart(arr, str) {
+    const result = arr.filter((el) => el.tolowerCase().includes(str.tolowerCase()));
+    return result;
+}
 
-// задание 2.2
-const fruits = ['яблоко', 'груша', 'гриб', 'огурец'];
-const searchStart2 = 'гру';
-fruits.forEach((fruit) => {
-    if (fruit.toLowerCase().includes(searchStart2.toLowerCase())) {
-		console.log(fruit);
-	}
-});
-
-// задание 2.3
-const places = ['Дом', 'Банк', 'Больница', 'Театр'];
-const searchStart3 = 'Кино';
-places.forEach((place) => {
-    if (place.toLowerCase().includes(searchStart3.toLowerCase())) {
-		console.log(place);
-	}
-});
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
 
 
-// задание 3.1
+// задание 3
 function getNumber() {
-    return Math.floor(32.58884);
 }
-console.log(getNumber());
+console.log(Math.round(32.58884));
+console.log(Math.ceil(32.58884));
+console.log(Math.floor(32.58884));
 
-// задание 3.2
-function getNumber() {
-    return Math.ceil(32.58884);
-}
-console.log(getNumber());
 
-// задание 3.3
-function getNumber() {
-    return Math.round(32.58884);
+// задание 4
+function searchNumber(minValue,maxValue) {
 }
-console.log(getNumber());
 
-// задание 4.1
-function searchNumber() {
-    return Math.max(52, 53, 49, 77, 21, 32);
-}
-console.log(searchNumber());
-
-// задание 4.2
-function searchNumber() {
-    return Math.min(52, 53, 49, 77, 21, 32);
-}
-console.log(searchNumber());
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+console.log(Math.min(52, 53, 49, 77, 21, 32));
 
 // задание 5
 function getRandomInt(minValue,maxValue) {
@@ -96,6 +64,9 @@ currentDate.setDate(73);
 console.log(currentDate);
 
 // задание 10
+function whichDay() {
+}
+
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
