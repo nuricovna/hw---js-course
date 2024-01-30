@@ -63,8 +63,8 @@ for (let i = 0; i < arrCreate.length - 1; i++) {
 // задание 11
 
 const products = [1, 2, 3, 4, 5, 6, 7, 8]
-function transformToSquare(num) {
-  return num * num
+function returnSquares (array) { 
+      return array.map(elem => elem ** 2) 
 }
 products.map(transformToSquare);
 
