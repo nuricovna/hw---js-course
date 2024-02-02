@@ -64,20 +64,21 @@ currentDate.setDate(73);
 console.log(currentDate);
 
 // задание 10
-function whichDay() {
+function whichDay(date) {
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+    let myDate = new Date();
+    myDate.setDate(25);
+    myDate.setMonth(0);
+    myDate.setYear(2024); 
+    myDate.setHours(10);
+    myDate.setMinutes(5);
+    myDate.setSeconds(5);
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
+    let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+    return someResult;
 }
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-let myDate = new Date();
-myDate.setDate(25);
-myDate.setMonth(0);
-myDate.setYear(2024); 
-myDate.setHours(10);
-myDate.setMinutes(5);
-myDate.setSeconds(5);
-let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
-let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
-
-console.log(fullDate, fullTime);
+console.log(new Date());
