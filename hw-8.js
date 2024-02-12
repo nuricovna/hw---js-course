@@ -49,16 +49,17 @@ console.log(filter(human, isMale));
 
 // ЗАДАНИЕ 3
 const timer = () => {
-	
-   const interval = setInterval(handler:() => console.log(new Date()), timeout: 300);
-	
-    setTimeout(handler:() => { 
-	clearInterval(interval); 
-	console.log('30 секунд прошло'); 
-    	}, timeout: 3000);
-};
+ 
+    const interval = setInterval(() => console.log(new Date()), 300);
+     
+     setTimeout(() => { 
+     clearInterval(interval); 
+     console.log('30 секунд прошло'); 
+         }, 3000);
+ };
+ 
+ timer(); 
 
-timer();
 
 // ЗАДАНИЕ 4
 function delayForSecond(callback) {
