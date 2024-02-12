@@ -48,13 +48,17 @@ console.log(filter(human, isMale));
 
 
 // ЗАДАНИЕ 3
-const timer = (deadline) => {
+const timer = () => {
 	
-    setInterval(() => console.log(new Date()), 3000);
-    setTimeout(() => { clearInterval(interval); console.log('30 секунд прошло'); }, 30000);
+   const interval = setInterval(handler:() => console.log(new Date()), timeout: 300);
+	
+    setTimeout(handler:() => { 
+	clearInterval(interval); 
+	console.log('30 секунд прошло'); 
+    	}, timeout: 3000);
 };
 
-timer(30);
+timer();
 
 // ЗАДАНИЕ 4
 function delayForSecond(callback) {
